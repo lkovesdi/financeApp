@@ -4,6 +4,23 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import configureStore from './store'
+
+// Styles
+
+
+// Import Main styles for this application
+
+
+// Containers
+// import Full from './containers/Full/'
+
+// View
+// import Login from './views/Pages/Login';
+
+
+
+// create react app version
 ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

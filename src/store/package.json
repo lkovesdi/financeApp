@@ -1,0 +1,8 @@
+{
+  "name": "store",
+  "version": "1.0.0",
+  "main": "./Store.js",
+  "dependencies": {
+    
+  }
+}
