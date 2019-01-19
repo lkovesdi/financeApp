@@ -1,20 +1,17 @@
 import { FETCH_GITHUB_DATA } from './types';
 import axios from 'axios';
-
-const apiUrl = 'https://api.github.com/users/rrozema12';
-
-export const fetchData = (data) => {
-   return {
-      type: FETCH_GITHUB_DATA,
-      data
-   }
-};
+import { host } from '../../config/api_config';
 
 export const fetchGithubData = () => {
    return (dispatch) => {
+      const apiUrl = 'https://api.github.com/users/rrozema12';
+
       return axios.get(apiUrl)
          .then(response => {
-            dispatch(fetchData(response.data))
+            dispatch({
+               type: FETCH_GITHUB_DATA,
+               data: response.data
+            })
          })
          .catch(error => {
             throw(error);
